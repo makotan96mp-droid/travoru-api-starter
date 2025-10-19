@@ -1,0 +1,13 @@
+{
+  "name": "travoru-api-starter",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vercel dev",
+    "test:send": "curl -i -X POST http://localhost:3000/api/send-email -H 'Content-Type: application/json' --data '{\"to\":\"you@example.com\",\"subject\":\"Local Test\",\"text\":\"Hello\"}'"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0"
+  }
+}
